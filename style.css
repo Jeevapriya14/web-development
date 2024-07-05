@@ -1,0 +1,60 @@
+h1{
+    border-top-style:double;
+    font-size: larger;
+    font-weight: 500;
+    font-style: italic;
+    font-variant: initial;
+    stroke: aqua;
+    
+}
+.box{
+    height: 100px;
+    width:100px;
+    background-color: rgb(168, 112, 221);
+}
+.box:hover{
+    background-color: aqua;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border-style: inherit;
+    transition: 2s;
+}
+
+.animated-text {
+    color: #000;
+    transition: all 0.3s ease;
+    font-style: normal;
+    
+}
+
+
+.animated-text:hover {
+    color: #ff6347; 
+    transform: scale(1.2); 
+}
+
+
+@keyframes hoverEffect {
+    0% {
+        letter-spacing: normal;
+    }
+    50% {
+        letter-spacing: 2px;
+    }
+    100% {
+        letter-spacing: normal;
+    }
+}
+
+.animated-text:hover {
+    animation: hoverEffect 0.6s ease-in-out; 
+}
+
+.animated-text:hover {
+    font-size: 2.5em; 
+    color: #ff6347; 
+}
+
+
+
